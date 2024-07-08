@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+html[color-scheme="light"] {
+  color-scheme: light;
+}
+html[color-scheme="dark"] {
+  color-scheme: dark;
+}
+
+body > label,
+body > div {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+#accent {
+  background-color: AccentColor;
+  color: AccentColorText;
+}
