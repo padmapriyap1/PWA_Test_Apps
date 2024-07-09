@@ -3,7 +3,8 @@
   "name": "Web App to test System Accent Color",
   "background_color": "#111111",
   "display": "standalone",
-  "scope": ".",
+  "scope": "/",
+  "orientation": "any",
   "start_url": "./index.html",
   "icons": [
     {
@@ -18,5 +19,7 @@
       "src": "128x128.png",
       "sizes": "128x128"
     }
-  ]
+  ],
+ "theme_color": "#ffffff",
+  "lang": "en"
 }
