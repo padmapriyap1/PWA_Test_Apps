@@ -1,0 +1,18 @@
+{
+  "short_name": "SAC",
+  "name": "Web App to test System Accent Color",
+  "background_color": "#111111",
+  "display": "standalone",
+  "scope": ".",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "144x144.png",
+      "sizes": "144x144"
+    }
+  ]
+}
