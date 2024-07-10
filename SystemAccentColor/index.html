@@ -8,41 +8,46 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="manifest" href="./manifest.json">
 </head>
-  <body>
-<fieldset>
-<legend>Range Element:</legend>
-<div>
-  <input type="range" id="volume" name="volume" min="0" max="11" />
-<label for="volume">Volume</label>
-</div>
-<div>
-  <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
-  <label for="cowbell">Cowbell</label>
-</div>
-</fieldset><br/>
-
-<fieldset>
-  <legend>Checkbox Element:</legend>
-
-  <div>
-    <input type="checkbox" id="scales" name="scales" checked />
-    <label for="choice1">Choice 1</label>
-  </div>
-
-  <div>
-    <input type="checkbox" id="horns" name="horns" />
-    <label for="Choice2">Choice 2</label>
-  </div>
-</fieldset><br/>
-<fieldset>
-  <legend>Radio Button Element:</legend>
- <div><label>Light Scheme <input id=light name=color-scheme value=light type=radio checked></label> </div>
- <div><label>Dark Scheme <input id=dark name=color-scheme value=dark type=radio></label> </div>
-  </fieldset><br/>
-
-<div id=accent class=box>System Accent Color: <span></span>
-</div>
-<div id=control-color>Control with System Accent Color: 
-  <span></span></div>
-
+  
+<body>
+    <script src="sw.js"></script>
+    <fieldset>
+      <legend>Range Element:</legend>
+      <div>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+        <label for="volume">Volume</label>
+      </div>
+      <div>
+        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+        <label for="cowbell">Cowbell</label>
+      </div>
+    </fieldset><br/>
+    <fieldset>
+      <legend>Checkbox Element:</legend>
+      <div>
+        <input type="checkbox" id="scales" name="scales" checked />
+        <label for="choice1">Choice 1</label>
+      </div>    
+      <div>
+        <input type="checkbox" id="horns" name="horns" />
+        <label for="Choice2">Choice 2</label>
+      </div>
+    </fieldset><br/>
+    <fieldset>
+      <legend>Radio Button Element:</legend>
+      <div>
+        <label>Light Scheme <input id=light name=color-scheme value=light type=radio checked></label>
+      </div>
+      <div>
+        <label>Dark Scheme <input id=dark name=color-scheme value=dark type=radio></label>
+      </div>
+    </fieldset><br/>
+    <fieldset>
+      <div id=accent class=box>System Accent Color:
+        <span></span>
+      </div>
+      <div id=control-color>Control with System Accent Color: 
+        <span></span>
+      </div>
+   </fieldset><br/>
 </body>
