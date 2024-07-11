@@ -11,7 +11,7 @@ function refreshColors() {
     window
       .getComputedStyle(dark.checked ? dark : light)
       .accentColor;
-};
+}
 
 
 function onSchemeChangeEvent({ target }) {
@@ -20,7 +20,7 @@ function onSchemeChangeEvent({ target }) {
     target.value
   );
   refreshColors();
-};
+}
 
 windows.onload = fuction() {
   document.getElementById("dark").checked = Boolean(window.matchMedia("(prefers-color-scheme:dark)").matches);
@@ -28,7 +28,7 @@ windows.onload = fuction() {
   document.getElementById("dark").onchange = onSchemeChangeEvent;
   
   refreshColors();
-};
+}
 
 
 
