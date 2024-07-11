@@ -10,21 +10,15 @@ self.addEventListener('fetch', e => {
   );
 });
 
-
-
-let light = document.getElementById("light");
-let dark = document.getElementById("dark");
-const controlColor = document.getElementById("control-color");
-
 function refreshColors() {
   for (const box of document.getElementsByClassName("box")) {
     box.querySelector("span").textContent = window.getComputedStyle(
       box
     ).backgroundColor;
   }
-  controlColor.querySelector("span").textContent =      
+  document.getElementById("control-color").querySelector("span").textContent =      
     window
-      .getComputedStyle(dark.checked ? dark : light)
+      .getComputedStyle(dark.checked ? document.getElementById("dark") : document.getElementById("light"))
       .accentColor;
 }
 
