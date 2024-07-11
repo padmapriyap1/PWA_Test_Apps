@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
   document.getElementById("dark").onchange = onSchemeChangeEvent;
   
   refreshColors();
-}
+})
 
 
 
