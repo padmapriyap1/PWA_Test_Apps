@@ -11,18 +11,21 @@ self.addEventListener('fetch', e => {
 });
 
 function refreshColors() {
+  let dark = document.getElementById("dark");
+  let light = document.getElementById("light");
+  let controls = document.getElementById("control-color");
   for (const box of document.getElementsByClassName("box")) {
     box.querySelector("span").textContent = window.getComputedStyle(
       box
     ).backgroundColor;
   }
-  document.getElementById("control-color").querySelector("span").textContent =      
+  controls.querySelector("span").textContent =      
     window
-      .getComputedStyle(dark.checked ? document.getElementById("dark") : document.getElementById("light"))
+      .getComputedStyle(dark.checked ? dark : light)
       .accentColor;
 }
 
-dark.checked = Boolean(
+document.getElementById("dark").checked = Boolean(
   window.matchMedia("(prefers-color-scheme:dark)").matches
 );
 
@@ -34,7 +37,7 @@ function onSchemeChangeEvent({ target }) {
   refreshColors();
 }
 
-light.onchange = onSchemeChangeEvent;
-dark.onchange = onSchemeChangeEvent;
+document.getElementById("light").onchange = onSchemeChangeEvent;
+document.getElementById("dark").onchange = onSchemeChangeEvent;
 
 refreshColors();
