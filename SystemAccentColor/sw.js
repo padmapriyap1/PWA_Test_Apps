@@ -14,9 +14,9 @@ function refreshColors() {
       .accentColor;
 }
 
-dark.checked = Boolean(
-  window.matchMedia("(prefers-color-scheme:dark)").matches
-);
+// dark.checked = Boolean(
+//   window.matchMedia("(prefers-color-scheme:dark)").matches
+// );
 
 function onSchemeChangeEvent({ target }) {
   document.documentElement.setAttribute(
