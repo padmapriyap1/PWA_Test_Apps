@@ -18,15 +18,15 @@ function refreshColors() {
 //   window.matchMedia("(prefers-color-scheme:dark)").matches
 // );
 
-function onSchemeChangeEvent({ target }) {
-  document.documentElement.setAttribute(
-    "color-scheme", 
-    target.value
-  );
-  refreshColors();
-}
+// function onSchemeChangeEvent({ target }) {
+//   document.documentElement.setAttribute(
+//     "color-scheme", 
+//     target.value
+//   );
+//   refreshColors();
+// }
 
-light.onchange = onSchemeChangeEvent;
-dark.onchange = onSchemeChangeEvent;
+// light.onchange = onSchemeChangeEvent;
+// dark.onchange = onSchemeChangeEvent;
 
 refreshColors();
