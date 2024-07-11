@@ -1,6 +1,5 @@
 {
   "name": "System Accent Color",
-  "short_name": "SAC",
   "display": "standalone",
   "start_url": "./index.html",
   "theme_color": "#111111",  
