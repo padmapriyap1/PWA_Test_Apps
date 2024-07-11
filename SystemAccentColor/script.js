@@ -13,7 +13,7 @@ function refreshColors() {
       .accentColor;
 }
 
-this.document.getElementById("dark").checked = Boolean(
+document.getElementById("dark").checked = Boolean(
   window.matchMedia("(prefers-color-scheme:dark)").matches
 );
 
