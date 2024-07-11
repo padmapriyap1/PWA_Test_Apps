@@ -11,11 +11,8 @@ function refreshColors() {
     window
       .getComputedStyle(dark.checked ? dark : light)
       .accentColor;
-}
+};
 
-document.getElementById("dark").checked = Boolean(
-  window.matchMedia("(prefers-color-scheme:dark)").matches
-);
 
 function onSchemeChangeEvent({ target }) {
   document.documentElement.setAttribute(
@@ -23,9 +20,15 @@ function onSchemeChangeEvent({ target }) {
     target.value
   );
   refreshColors();
-}
+};
 
-document.getElementById("light").onchange = onSchemeChangeEvent;
-document.getElementById("dark").onchange = onSchemeChangeEvent;
+windows.onload = fuction() {
+  document.getElementById("dark").checked = Boolean(window.matchMedia("(prefers-color-scheme:dark)").matches);
+  document.getElementById("light").onchange = onSchemeChangeEvent;
+  document.getElementById("dark").onchange = onSchemeChangeEvent;
+  
+  refreshColors();
+};
 
-refreshColors();
+
+
