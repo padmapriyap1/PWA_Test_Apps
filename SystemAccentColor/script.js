@@ -22,7 +22,7 @@ function onSchemeChangeEvent({ target }) {
   refreshColors();
 }
 
-windows.onload = fuction() {
+document.addEventListener('DOMContentLoaded', ()=> {
   document.getElementById("dark").checked = Boolean(window.matchMedia("(prefers-color-scheme:dark)").matches);
   document.getElementById("light").onchange = onSchemeChangeEvent;
   document.getElementById("dark").onchange = onSchemeChangeEvent;
